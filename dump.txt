@@ -1,0 +1,32 @@
+@keyframes slider {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+        background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(./assets/slider/1.jpg);
+    }
+    7.5% {
+        transform: scale(1.5);
+        filter: brightness(0%);
+        background: url(./assets/slider/black.jpg);
+    }
+    15% {
+        transform: scale(1.5);
+        filter: brightness(100%);
+        background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(./assets/slider/2.jpg);
+    }
+    50% {
+        transform: scale(1);
+        filter: brightness(0%);
+        background: url(./assets/slider/black.jpg);
+    }
+    85% {
+        transform: scale(1);
+        filter: brightness(100%);
+        background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(./assets/slider/3.jpg);
+    }
+    100% {
+        transform: scale(1.5);
+        filter: brightness(0%);
+        background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(./assets/slider/black.jpg);
+    }
+}

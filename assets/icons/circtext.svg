@@ -1,0 +1,7 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="80" fill="none" />
+  <text fill="white">
+    <textPath href="#circlePath">ipsum dolor sit amet consectetur adipisicing elit. Et, culpa molestiae delectus</textPath>
+  </text>
+  <path id="circlePath" d="M100,20 a80,80 0 1,0 0,160 a80,80 0 1,0 0,-160" fill="none" />
+</svg>

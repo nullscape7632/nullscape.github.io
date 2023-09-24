@@ -1,0 +1,426 @@
+/* Landing Page Styles */
+.landingpage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Logo Styles */
+#logo {
+    width: 180px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .3));
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5%;
+    position: fixed;
+    z-index: 1;
+}
+
+/* Header Links Styles */
+.header .links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    width: 300px;
+    background-color: rgb(7, 7, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    right: -3000px;
+    transition: all 300ms;
+}
+
+/* Header Navigation Styles */
+.header nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+    flex-direction: column;
+    width: 80%;
+    margin: 10%;
+    height: 60%;
+}
+
+/* Header Navigation Links Styles */
+.header nav ul li a {
+    color: white;
+    text-transform: capitalize;
+}
+
+/* Social Icons Styles */
+.socials img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Header Button Styles */
+.header button {
+    border: none;
+    background: none;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+/* Header Button Image Styles */
+nav button img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Social Icons Styles */
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid white;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.socials img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Active Header Styles */
+.header .active {
+    right: 0px;
+    transition: all 300ms;
+}
+
+/* Animated Slider Styles */
+.animate {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(./assets/slider/1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: slider 28s cubic-bezier(.25, .46, .44, .95) infinite;
+}
+
+/* Keyframes for Slider Animation */
+@keyframes slider {
+    0%, 50%, 100% {
+        transform: scale(1.1);
+        background-image: url('./assets/slider/1.jpg'); /* Replace with your image URLs */
+    }
+    12.5% {
+        transform: scale(1.1);
+        background-image: url('./assets/slider/2.jpg');
+    }
+    25% {
+        transform: scale(1.1);
+        background-image: url('./assets/slider/3.jpg');
+    }
+    37.5% {
+        transform: scale(1.1);
+        background-image: url('./assets/slider/4.jpg');
+    }
+    62.5% {
+        transform: scale(1.1);
+        background-image: url('./assets/slider/5.jpg');
+    }
+    75% {
+        transform: scale(1.1);
+        background-image: url('./assets/slider/6.jpg');
+    }
+    87.5% {
+        transform: scale(1.1);
+        background-image: url('./assets/slider/7.jpg');
+    }
+}
+
+/* Hero Intro Styles */
+.landingpage .herointro {
+    position: absolute;
+    z-index: 10;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading Styles */
+h1 {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+}
+
+/* Hero Intro Paragraph Styles */
+.herointro p {
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Featured Section Styles */
+.featured {
+    width: 100%;
+    height: 100vh;
+    padding: 0 30px;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(./assets/bgimgs/project-back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Featured Section Heading Styles */
+.featured h1 {
+    padding: 50px 0;
+}
+
+/* Feature Slide Styles */
+.featureslide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Model Slide Styles */
+.modelslide {
+    position: relative;
+    width: 50%;
+    height: 60vh;
+}
+
+/* Model Viewer Styles */
+model-viewer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+/* Slide Description Styles */
+.slide-description {
+    width: 40%;
+    height: 50vh;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Slide Description Heading Styles */
+.slide-description h1 {
+    padding: 0;
+}
+
+/* Slide Description Paragraph Styles */
+.slide-description p {
+    width: 100%;
+    color: #ffffff;
+    text-transform: capitalize;
+    line-height: 1.5rem;
+}
+
+/* Slide Description Link Styles */
+.slide-description a {
+    font-weight: 500;
+    padding: 20px;
+    color: #ffffff;
+    background: rgb(75, 68, 198);
+    background: linear-gradient(131deg, rgba(75, 68, 198, 1) 0%, rgba(20, 40, 150, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 12px;
+}
+
+/* Master Card Styles */
+.master-card {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    /* Adjust the width as needed */
+}
+
+/* Master Card Image Styles */
+.master-card img {
+    width: 80%;
+    /* Adjust the image size as needed */
+    height: 80%;
+    /* Adjust the image size as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Master Card Heading Styles */
+.master-card h5 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+/* Master Card Paragraph Styles */
+.master-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Master Card Link Styles */
+.master-card a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Master Card Link Image Styles */
+.master-card a img {
+    width: 30px;
+    /* Adjust the icon size as needed */
+    height: 30px;
+    /* Adjust the icon size as needed */
+    background: rgb(41, 112, 217);
+}
+
+/* Team Section Heading Styles */
+#team h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center;
+    color: #000;
+}
+
+/* Team Section Styles */
+#team {
+    width: 100%;
+}
+
+/* Card Holder Styles */
+.card-holder {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-items: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10%;
+}
+
+/* Master Card Hover Styles */
+.master-card:hover {
+    box-shadow: 2px 2px 28px #333;
+}
+
+/* About Section Styles */
+.about-section {
+    border: 3px black solid;
+    outline: 3px black solid;
+    outline-offset: -13px;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    margin: 5% 2.5%;
+}
+
+/* About Section Heading Styles */
+.about-section h3 {
+    text-transform: capitalize;
+}
+
+/* About Section Link Styles */
+.about-section a {
+    display: block;
+    font-weight: 500;
+    padding: 20px;
+    color: #ffffff;
+    background: rgb(75, 68, 198);
+    background: linear-gradient(131deg, rgb(198, 68, 68) 0%, rgb(146, 20, 150) 35%, rgb(255, 136, 0) 100%);
+    border-radius: 12px;
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    background: rgb(75, 68, 198);
+    background: linear-gradient(131deg, rgba(75, 68, 198, 1) 0%, rgba(20, 40, 150, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 12px;
+}
+
+/* Footer Image Styles */
+footer img {
+    width: 300px;
+}
+
+/* Inner Container Styles */
+.inner-container {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer Links Styles */
+.footer-links a {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+/* Footer Social Icons Styles */
+.footer-socials a {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Footer Social Icons Image Styles */
+.footer-socials img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Scrollbar Styles for Firefox */
+/* Style the scrollbar thumb for Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #333 #888;
+}
+
+/* Style the scrollbar thumb for Firefox on hover */
+* {
+    scrollbar-color: #555 #999;
+}
+
+/* Scrollbar Styles for Microsoft Edge */
+/* Style the scrollbar thumb for Microsoft Edge */
+*::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+
+/* Style the scrollbar track for Microsoft Edge */
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: #888;
+}
+
+/* Style the scrollbar thumb on hover for Microsoft Edge */
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Style the scrollbar track on hover for Microsoft Edge */
+*::-webkit-scrollbar-track:hover {
+    background-color: #999;
+}
